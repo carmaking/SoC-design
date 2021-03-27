@@ -164,7 +164,7 @@ begin
 		begin
 		      case(count_mode)
 		          6'd7     :       set_data = {1'b1, 1'b0, reg_a[31:24]};
-                  6'd8     :       set_data = {1'b1, 1'b0, reg_a[23:16]};
+                 	  6'd8     :       set_data = {1'b1, 1'b0, reg_a[23:16]};
 		          6'd9     :       set_data = {1'b1, 1'b0, reg_a[15:8]};
 		          6'd10    :       set_data = {1'b1, 1'b0, reg_a[7:0]};                
 		          6'd11    :       set_data = {1'b1, 1'b0, reg_b[31:24]};		
@@ -185,9 +185,9 @@ begin
 		mode_wr2nd	: 
 		begin
 		      case(count_mode)
-		          6'd24     :       set_data = {1'b1, 1'b0, reg_e[31:24]};
-                  6'd25     :       set_data = {1'b1, 1'b0, reg_e[23:16]};
-		          6'd26     :       set_data = {1'b1, 1'b0, reg_e[15:8]};
+		          6'd24    :       set_data = {1'b1, 1'b0, reg_e[31:24]};
+              	          6'd25    :       set_data = {1'b1, 1'b0, reg_e[23:16]};
+		          6'd26    :       set_data = {1'b1, 1'b0, reg_e[15:8]};
 		          6'd27    :       set_data = {1'b1, 1'b0, reg_e[7:0]};                
 		          6'd28    :       set_data = {1'b1, 1'b0, reg_f[31:24]};		
 		          6'd29    :       set_data = {1'b1, 1'b0, reg_f[23:16]};		
